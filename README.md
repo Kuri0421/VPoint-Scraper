@@ -53,7 +53,7 @@ VPointScraper.exe -s [取得を開始する年月] -e [取得を終了する年�
 
 #### 例 (2019年1月から2024年2月までのポイント履歴を取得する場合)
 ```bash
-VPointScraper.exe -s 2019012 -e 202402
+VPointScraper.exe -s 201902 -e 202402
 ```
 
 ### LinuxやMacOSの場合
@@ -62,7 +62,7 @@ python main.py -s [取得を開始する年月] -e [取得を終了する年月]
 ```
 #### 例 (2019年1月から2024年2月までのポイント履歴を取得する場合)
 ```bash
-python main.py -s 2019012 -e 202402
+python main.py -s 201901 -e 202402
 ```
 
 ### ログイン処理
