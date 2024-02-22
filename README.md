@@ -22,14 +22,18 @@ CSVファイルなので。Excel等で煮るなり焼くなり好きなように
 ## 前提条件🔍
 - 三井住友カードのVPASS会員であること
 - Chromeブラウザがインストールされていること
+### LinuxやmacOSの場合
 - Python 3.8以上 (Windowsの場合はexeファイルを使用するため不要)
 - 依存パッケージ (requirements.txt参照)(Windowsの場合はexeファイルを使用するため不要)
 
 ## 導入🔽
+### Windowsの場合
 PythonのスクリプトをPyinstallerでexe化したものを [Releases](https://github.com/Kuri0421/VPointScraper/releases/) にて配布しています。
 > [!WARNING]
 > Pyinstallerでexe化したのでWindows Defender等のセキュリティソフトによってはトロイの木馬等の判定が出るかもしれません。その場合は無視して実行してください。
 信用できないなら使わないでください。
+
+### Linux、macOSの場合
 
 動作確認はしていませんが、LinuxやMacOSの場合は、Pythonのスクリプトをそのまま実行してください。
 多分動くと思います。多分。
@@ -43,20 +47,20 @@ pip install -r requirements.txt
 ## 使い方🚀
 
 ### Windowsの場合
-Windowsの場合は、コマンドプロンプトやPowerShellを開いて、以下のコマンドを実行してください。
+コマンドプロンプトやPowerShellを開いて、下記のコマンドを実行してください。
 ```bash
 VPointScraper.exe -s [取得を開始する年月] -e [取得を終了する年月]
 ```
 > [!WARNING]
-> CSVファイルを出力するため管理者権限が必要です。管理者権限で実行してください。
+> CSVファイルを出力する関係で管理者権限が必要です。
 
 
 #### 例 (2019年1月から2024年2月までのポイント履歴を取得する場合)
 ```bash
-VPointScraper.exe -s 201902 -e 202402
+VPointScraper.exe -s 201901 -e 202402
 ```
 
-### LinuxやMacOSの場合
+### LinuxやmacOSの場合
 ```bash
 python main.py -s [取得を開始する年月] -e [取得を終了する年月]
 ```
